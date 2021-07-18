@@ -1,16 +1,46 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
 
 * {
 	box-sizing: border-box;
 }
 
 body {
-	font-family: "Roboto", "sans-serif";
+	background: hsla(276, 91%, 79%, 1);
+	background: linear-gradient(90deg, hsla(276, 91%, 79%, 1) 0%, hsla(254, 74%, 65%, 1) 100%);
+	background: -moz-linear-gradient(90deg, hsla(276, 91%, 79%, 1) 0%, hsla(254, 74%, 65%, 1) 100%);
+	background: -webkit-linear-gradient(90deg, hsla(276, 91%, 79%, 1) 0%, hsla(254, 74%, 65%, 1) 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D397FA", endColorstr="#8364E8", GradientType=1 );
+	font-family: "Poppins", "sans-serif";
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrapped;
 	align-items: center;
 	justify-content: center;
+	text-align: center;
 	height: 100vh;
 	overflow: hidden;
 	margin: 0;
+}
+
+.btn {
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	border: none;
+	color: #fff;
+	margin: 1rem;
+	padding: 1.5rem 3rem;
+	font-size: 1.2rem;
+	font-family: inherit;
+	cursor: pointer;
+}
+
+.btn:hover {
+	opacity: 0.9;
+}
+
+.btn:focus {
+	outline: none;
+}
+
+.btn:last-of-type {
+	background-color: rgb(230, 55, 70, 0.8);
 }
